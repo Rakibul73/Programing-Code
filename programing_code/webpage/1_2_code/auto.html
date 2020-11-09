@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js">
+</script>
+</head>
+<body>
+<!-- this element will display the variable. It is empty as it will be filled from javascript. -->
+<h1 id="number" onclick="count();">
+</h1>
+<script type="text/javascript">
+// this is a variable, we start it at 0
+var counter = 0;
+// display the variable in the
+// element "number"
+$("#number").text(counter);
+// when this function is called it runs
+// everything inside the curly brackets
+function count() {
+// firstly one is added to the variable
+// ‘counter'
+counter = counter + 1;
+// set the h1 element (with id “number”)
+// with the value of ‘counter'
+$("#number").text(counter);
+}
+</script>
+</body>
+</html>

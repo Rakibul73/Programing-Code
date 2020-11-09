@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Thing
+comment1.params=x
+comment1.target=Thing(int)
+comment2.params=
+comment2.target=int\ geta()
+comment3.params=y
+comment3.target=void\ combine(Thing)
+numComments=4

@@ -1,0 +1,13 @@
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.exe
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.deps.json
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.runtimeconfig.json
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.runtimeconfig.dev.json
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.dll
+E:\programing_code\Programing-Code\programing_code\C#\First\bin\Debug\netcoreapp3.1\First.pdb
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.csprojAssemblyReference.cache
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.AssemblyInfoInputs.cache
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.AssemblyInfo.cs
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.csproj.CoreCompileInputs.cache
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.dll
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.pdb
+E:\programing_code\Programing-Code\programing_code\C#\First\obj\Debug\netcoreapp3.1\First.genruntimeconfig.cache

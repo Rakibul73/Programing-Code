@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1600443322 source:e:\programing_code\programing-code\programing_code\c++\usaco\tttt\test\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+

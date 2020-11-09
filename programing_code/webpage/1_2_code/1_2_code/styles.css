@@ -1,0 +1,9 @@
+
+
+h1 {
+    background: black;        /*black background*/
+    color: #fff;            /*white color*/
+    font-family: serif;        /*specific font*/
+    font-size:25px;          /* text size change*/
+
+}

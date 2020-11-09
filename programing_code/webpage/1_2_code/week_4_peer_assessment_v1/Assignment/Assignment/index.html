@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animals</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assignment.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1>Animals</h1>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#" id="categories-crumb">Home</a></li>
+      </ol>
+      <div id="content" role="main">
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted">Responsive Web Design</p>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="AnimalsData.js"></script>
+    <script id="categories-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Choose an animal category:</p>
+        </div>
+      </div>
+      <div class="row">
+        {{#each category}}
+        <div class="col-md-4">
+          <div class="category-thumbnail" data-id="{{@index}}">
+            <h2>{{name}}</h2>
+            <img src="{{animals.[0].image1}}" alt="" class="img-responsive img-rounded"/>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </script>
+    <script id="category-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Choose an animal:</p>
+        </div>
+      </div>
+      <div class="row">
+        {{#each animals}}
+        <div class="col-md-3">
+          <div class="animal-thumbnail" data-id="{{@index}}">
+            <h2>{{name}}</h2>
+            <img src="{{image1}}" alt="" class="img-responsive img-rounded"/>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </script>
+    <script id="animal-template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>{{name}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>{{description}}</p>
+        </div>
+        <div class="col-md-3">
+          <img src="{{image1}}" alt="" class="img-responsive img-rounded"/>
+        </div>
+        <div class="col-md-3">
+          <img src="{{image2}}" alt="" class="img-responsive img-rounded"/>
+        </div>
+      </div>
+    </script>
+    <script id="breadcrumb-template" type="text/x-handlebars-template">
+      <li><a href="#" id="{{type}}-crumb">{{name}}</a></li>
+    </script>
+    <script src="assignment.js"></script>
+  </body>
+</html>

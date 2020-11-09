@@ -1,0 +1,10 @@
+/* this is for the thumbnail images */
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+}
+
+/* this is for the big main image */
+.large-img{
+  max-width:100%;
+}

@@ -1,0 +1,2 @@
+ide = 'abcdefg'
+type(ide)
