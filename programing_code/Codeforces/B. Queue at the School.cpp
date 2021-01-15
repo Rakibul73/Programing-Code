@@ -1,17 +1,28 @@
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(int c, char *argv[])
+#include <bits/stdc++.h>
+using namespace std;
+int main()
 {
-	printf("By the time you will compile me I will be destroyed \n");
+    int n , t;
+    cin>>n>>t;
+    char s[n];
+    for (int i = 0; i<n; i++) {
+        cin>>s[i];
+    }
+    for (int i= 1; i<=t; i++) {
+        for(int j= 0; j< n; ) {
+            if(s[j] == 'B' && s[j+1]== 'G') {
+                s[j] = 'G';
+                s[j+1] = 'B';
+                j=j+2;
+                continue;
+            }
+            j++;
+        }
+    }
+    for (int i = 0; i<n; i++) {
+        cout<<s[i];
+    }
+    cout<<endl;
 
-// array of pointers to command line arguments
-	remove(argv[0]);
-
-// Note: argv[0] will contain the executable file i.e. 'a.out'
-
-return 0;
+    return 0;
 }
-
-// This code is contributed by MAZHAR IMAM KHAN.
-
