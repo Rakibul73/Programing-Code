@@ -8,17 +8,18 @@
 
 
 
-#include <stdio.h>
-
-int main()
-{
-    int i;
-    scanf("%d", &i);
-    if(i%2 == 0 && i != 2) {
-        printf("YES\n");
+#include <bits/stdc++.h> 
+using namespace std;
+int main() {
+    string s,t;
+    cin>>s;
+    cin>>t;
+    reverse(t.begin(), t.end());
+    if ( s==t ) {
+        cout<<"YES"<<endl;
     }
     else {
-        printf("NO\n");
+        cout<<"NO"<<endl;
     }
     return 0;
 }
