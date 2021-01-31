@@ -26,40 +26,35 @@ int main() {
             }
 
         }
-        if ( one ==1 && two==1) {
-            cout<<"NO"<<endl;
-        }
-        else if(one > 1 && two > 1 && one == two) {
-            cout<<"YES"<<endl;
-        }
-        else if(one > 0 && two > 0 && one != two) {
-            cout<<"NO"<<endl;
-        }
-        else if ( one == 0 && two != 0) {
-            if(two % 2 == 0) {
+        if(one  > 0  && two > 0) {
+            if(( (one*1) %2 == 0) && ((two*2) %2 == 0)) {
                 cout<<"YES"<<endl;
             }
             else {
                 cout<<"NO"<<endl;
             }
         }
-        else if ( one != 0 && two == 0) {
-            if(one % 2 == 0) {
+        else if (one > 0 && two ==0) {
+            if( one %2 == 0) {
                 cout<<"YES"<<endl;
             }
             else {
                 cout<<"NO"<<endl;
             }
-        }
+        }    
+        else if (two > 0 && one ==0) {
+            if( two %2 == 0) {
+                cout<<"YES"<<endl;
+            }
+            else {
+                cout<<"NO"<<endl;
+            }
+        }    
+
+
 
 
         one=0, two=0;
-
-
-
-
-
-
         t--;
     }
     
