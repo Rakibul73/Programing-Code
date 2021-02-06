@@ -10,16 +10,12 @@
 
 #include <bits/stdc++.h> 
 using namespace std;
+#define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 int main() {
-    string s,t;
-    cin>>s;
+    // Below function is A fast IO program
+    fast_cin();
+    int t;
     cin>>t;
-    reverse(t.begin(), t.end());
-    if ( s==t ) {
-        cout<<"YES"<<endl;
-    }
-    else {
-        cout<<"NO"<<endl;
-    }
+    
     return 0;
 }

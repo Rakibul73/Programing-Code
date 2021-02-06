@@ -11,21 +11,25 @@
 #include <bits/stdc++.h> 
 using namespace std;
 int main() {
-    int n , m, input, sum=0;
-    vector<int>a;
-    cin>>n>>m;
-    for(int i = 0; i<n; i++) {
-        cin>>input;
-        a.push_back(input);
-    }
-    sort(a.begin(), a.end());
-    for (int i =0; i <m ; i++)
+    int t,n;
+    cin>>t;
+    while (t)
     {
-        if(a[i] < 0) {
-            sum = sum + -a[i];
+        cin>>n;
+        int a,b;
+        b = n%2020;
+        a = ((n-b) / 2020 ) - b;
+        if (a >= 0 && n ==  (2020*(a+b) + b)) {
+            cout<<"YES"<<endl;
         }
+        else {
+             cout<<"NO"<<endl;
+        }
+
+
+
+        t--;
     }
-    cout<<sum<<endl;    
     
     return 0;
 }
