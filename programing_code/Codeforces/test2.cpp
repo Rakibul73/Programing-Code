@@ -6,6 +6,8 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
+// last modified: 2021/02/10 21:44:55
+
 
 
 #include <bits/stdc++.h> 
@@ -14,8 +16,6 @@ using namespace std;
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    int t;
-    cin>>t;
     
     return 0;
 }
