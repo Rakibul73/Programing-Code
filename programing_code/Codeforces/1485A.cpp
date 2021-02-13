@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/12 21:28:17
+// last modified: 2021/02/13 13:34:17
 
 
 
@@ -27,6 +27,8 @@ int main() {
         {
             if (a > b)
             {
+                b = b+1;
+                count++;
                 a = a/b;
                 count++;
             }

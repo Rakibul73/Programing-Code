@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/12 21:28:17
+// last modified: 2021/02/13 13:28:28
 
 
 
@@ -20,29 +20,20 @@ int main() {
     cin>>t;
     while (t)
     {
-        long long a, b;
-        cin>>a>>b;
+        long long x, y;
+        cin>>x>>y;
         long long count = 0;
-        while (a != 0)
+        
+        for (long long i = 1; i*i < x; i++)
         {
-            if (a > b)
-            {
-                a = a/b;
-                count++;
-            }
-            else if (a == b)
-            {
-                b = b+1;
-                count++;
-            }
-            else {
-                a = a/b;
-                count++;
-            }
+            count = count + max((long long)0,min(y,x/i-1)-i);
         }
+        
         cout<<count<<"\n";
+
+
+
         t--;
     }
-    
     return 0;
 }
