@@ -6,43 +6,43 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/13 00:28:48
+// last modified: 2021/02/13 23:13:38
 
 
 
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
+#include <map>
 using namespace std;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+std::map<char, int>
+storeStringFrequency(string str)
+{
+    map<char, int> M;
+    for (int i = 0; str[i]; i++) 
+    {
+        if (M.find(str[i]) == M.end()) 
+        {
+            M.insert(make_pair(str[i], 1));
+        }
+        else
+        {
+            M[str[i]]++;
+        }
+    }
+    return M;
+}
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    int t;
-    cin>>t;
-    while (t)
-    {
-        long long x, y;
-        cin>>x>>y;
-        long long count = 0;
+    string s1, s2;
+    getline(cin,s1);
+    getline(cin,s2);
+    map<char, int>x1, x2;
+    x1 = storeStringFrequency(s1);
+    x2 = storeStringFrequency(s2);
+    for(const auto & i : x2) {
         
-        for (long long j = 2; j <= y; j++)
-        {
-            int k=j-1;
-            if( (j+1)*k  <= x ) {
-                count = count + k;
-            }
-            // for (long long i = (j+1)*k; i <= x && (j-1) >= k; i = (j+1)*k )
-            // {
-            //     count++;
-            //     k++;
-            // }
-            
-        }    
-        cout<<count<<"\n";
-        
-
-
-
-        t--;
     }
+
     return 0;
 }
