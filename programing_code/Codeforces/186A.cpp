@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/15 16:54:42
+// last modified: 2021/02/16 20:03:09
 
 
 
@@ -17,37 +17,43 @@ int main() {
     // Below function is A fast IO program
     fast_cin();
     string s1, s2;
-    int p = 0;
+    int p,q, k = 0;
     cin>>s1;
     cin>>s2;
     if (s1.size() != s2.size()) {
         cout<<"NO"<<"\n";
     }
-    else {
+    else  {
         for (int i = 0; i < s1.size(); i++)
         {
-            char temp = s1[i];
-            for (int j = i+1; j < s1.size(); j++)
-            {
-                s1[i] = s1[j];
-                s1[j] = temp;
-                if (s1 == s2) {
-                    p = 1;
+            if (s1[i] != s2[i]) {
+                k++;
+                if( k == 1) {
+                    p = i;
+                }
+                else if( k == 2) {
+                    q = i;
+                }
+                if(k == 3) {
                     break;
                 }
-                s1[j] = s1[i];
-                s1[i] = temp;
-            }
-            if ( p == 1) {
-                break;
             }
         }
-        if ( p == 1) {
-            cout<<"YES"<<"\n";
+        if ( k == 2) {
+            char temp = s1[p];
+            s1[p] = s1[q];
+            s1[q] = temp;
+            if (s1 == s2) {
+                cout<<"YES"<<"\n";
+            }
+            else {
+                cout<<"NO"<<"\n";
+            }
         }
         else {
             cout<<"NO"<<"\n";
         }
+        
     }
     return 0;
 }
