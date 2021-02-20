@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/20 13:44:37
+// last modified: 2021/02/20 17:34:15
 
 
 
@@ -51,7 +51,25 @@ long long lcm_calculate_for_two_num (long long a, long long b) {
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    
+    int t;
+    cin>>t;
+    while (t)
+    {
+        long long n, k, ans;
+        cin>>n>>k;
+        k--;
+        if (n %2 == 0)
+        {
+            ans=(k%n) + 1;
+        }
+        else {
+            ans = (((k/(n/2))+k)%n) + 1;
+            
+        }
+        cout<<ans<<"\n";
+
+        t--;
+    }
     
     return 0;
 }
