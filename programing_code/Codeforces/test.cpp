@@ -6,14 +6,25 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/19 15:18:26
+// last modified: 2021/02/20 13:27:31
 
 
 
 #include <bits/stdc++.h> 
 using namespace std;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-
+map<char, int> stringTOmapWithFreq(string str) {
+    map<char, int> abc;
+    for (long long i = 0; i < str.size(); i++)
+    {
+        abc[str[i]]++;
+    }
+    abc.erase(' '); // map thika space key remove krsi.
+    return abc;
+}
+vector<pair<char, int>> maptovector(const map<char,int> &map) {
+    return vector<pair<char,int>>(map.begin(), map.end());
+}
 vector<pair<int,int>>  cinvecpair(int n) {
     int q, w;
     vector<pair<int,int>> a;
@@ -25,56 +36,26 @@ vector<pair<int,int>>  cinvecpair(int n) {
     }
     return a;
 }
+
+long long gcd_naive(long long a, long long b)
+{
+    if (b == 0)
+        return a;
+    return gcd_naive(b, a % b);
+}
+long long lcm_calculate_for_two_num (long long a, long long b) {
+    long long c = gcd_naive(a, b);
+    return (a*b)/c;
+}
+
+
+
+
+
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    int n,k;
-    cin>>n>>k;
-    if (k > 8) {
-        int u = k/8 + 1;
-        vector<int>a(n);
-        int sum = 0;
-        for (int i = 0; i < n; i++)
-        {
-            cin>>a[i];
-            if (u >= i+1) {
-                sum = sum + a[i];
-            }
-        }
-        if (u <= n && k <= sum) {
-            cout<<u<<"\n";
-        }
-        else {
-            cout<<"-1"<<"\n";
-        }
-    }
-    else {
-        vector<int>a(n);
-        int sum = 0, pos;
-        bool flag = true;
-        for (int i = 0; i < n; i++)
-        {
-            cin>>a[i];
-            sum = sum + a[i];
-            if(sum >= 8) {
-                sum = sum - 8;
-                k = k - 8;
-            }
-            else {
-                k = k - a[i];
-                sum = sum - a[i];
-            }
-            if (k <=0 && flag) {
-                pos = i+1;
-                flag = false;
-            }
-        }
-        if (k <=0) {
-            cout<<pos<<"\n";
-        }
-        else {
-            cout<<"-1"<<"\n";
-        }    
-    }
+    
+    
     return 0;
 }
