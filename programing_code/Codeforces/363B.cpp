@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/20 22:14:02
+// last modified: 2021/02/21 14:12:18
 
 
 
@@ -25,17 +25,18 @@ int main() {
     {
         cin>>h[i];
     }
-    for (int i = 0; i < n-k; i++)
+    for (int j = 0; j < k; j++)
     {
-        jog = 0;
-        for (int j = i; j < i+k; j++)
-        {
-            jog = jog + h[j]; 
-        }
-        if (jog < sum)
-        {
-            ans= i;
+        jog = jog + h[j]; 
+    }
+    sum = jog;
+    ans = 0;
+    for (int i = k; i < n; i++)
+    {
+        jog = jog+h[i]-h[i-k];
+        if(sum > jog) {
             sum = jog;
+            ans = i-k+1;
         }
     }
     cout<<ans + 1<<"\n";
