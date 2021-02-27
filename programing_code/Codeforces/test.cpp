@@ -1,50 +1,91 @@
-// C++ program for the above approach 
-#include <iostream> 
-using namespace std; 
+/* In the name of *Allah*
+ *   Thank You *Parsa*  */
 
-// Function to return dynamic allocated 
-// array consisting integers individually 
-int* GetBigInteger(string str) 
-{ 
-	int x = str.size(), a = 0; 
+//#pragma GCC target ("avx2")
+//#pragma GCC optimization ("O2")
+//#pragma GCC optimization ("unroll-loops, fast-math")
 
-	// Create an array to store the big 
-	// integer into it. 
+#include<iostream>
+#include<algorithm>
+#include<math.h>
+#include<string>
+#include<ios>
+#include<iomanip>
+#include<vector>
+#include<utility>
+#include<set>
+#include<map>
+#include<queue>
+#include<numeric>
+using namespace std;
 
-	// Make the array size same as the 
-	// size of string str 
-	int* arr = new int[str.size()]; 
+#define pb push_back
+#define fi first
+#define se second
+#define all(x) x.begin(), x.end()
+#define sz(x) (int)x.size()
+#define Setprecision(x) cout << fixed << setprecision(x);
+#define print(x) cerr << '\n' << (#x) << " is " << (x) << '\n';
 
-	// Loop to extract string elements 
-	// into the array one by one 
-	while (a != x) { 
+typedef vector <int> VI;
+typedef vector <long long> VLL;
+typedef pair <int, int> PII;
+typedef set <int> SI;
+typedef set <long long> SLL;
+typedef long long ll;
 
-		// Subtracting '0' to convert 
-		// each character into digit 
+const int inf_int = 1 << 30;
+const ll inf_longlong = 1LL << 62;
+const ll MOD = 1073741824;
 
-		// str[a] - '0' 
-		// = ASCII(str[a]) - ASCII('0') 
-		// = ASCII(str[a] - 48 
-		arr[a] = str[a] - '0'; 
-		a++; 
-	} 
+const int N = 1e6 + 5;
+int a, b, c;
+int ans;
+int cnt[N];
 
-	// Return the reference of the array 
-	return arr; 
-} 
+void init() {
+	for (int i = 1; i < N; i++) {
+		for (int j = i; j < N; j += i) cnt[j]++;
+	}
+}
 
-// Driver Code 
-int main() 
-{ 
-	// Big Integer in form of string str 
-	string str = "123456780987654312345678098765437777777777777777777777777777777777777777777777777777777777777777888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888899"; 
+inline int add(int x, int y) {
+	ll out = x;
+	out += y;
+	if (out >= MOD) out -= MOD;
+	return out;
+}
 
-	// Function Call 
-	int* arr = GetBigInteger(str); 
+int number_divisors(int x) {
+	return cnt[x];
+}
 
-	// Print the digits in the arr[] 
-	for (int i = 0; i < str.size(); i++) { 
-		cout << arr[i]; 
-	} 
-	return 0; 
-} 
+inline void read_input() {
+	cin >> a >> b >> c;
+}
+
+inline void solve() {
+	for (int i = 1; i <= a; i++) {
+		for (int j = 1; j <= b; j++) {
+			for (int k = 1; k <= c; k++) {
+				ans = add(ans, number_divisors(i * j * k));
+			}
+		}
+	}
+	cout << ans;
+}
+
+inline void write_output() {
+}
+
+int main() {
+	ios:: sync_with_stdio(false), cin.tie(0), cout.tie(0);
+	init();
+
+	int t = 1; //cin >> t;
+	while (t--) {
+		read_input(), solve(), write_output();
+	}
+	return 0;
+}
+// Thanks *Allah*
