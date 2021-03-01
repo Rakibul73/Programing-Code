@@ -3,6 +3,8 @@ programing_code/Codeforces/.cph/
 programing_code/Codeforces/.vscode/
 programing_code/Contests/codechef/.vscode/
 programing_code/Contests/codechef/.cph/
+programing_code/HackerRank/.vscode/
+programing_code/HackerRank/.cph/
 
 gc++ 1.exe.dat
 programing_code/Codeforces/*.exe
@@ -11,3 +13,4 @@ programing_code/C++/Bohubrihi/*.exe
 programing_code/C++/*.exe
 programing_code/C++/Bohubrihi/.cph/
 programing_code/C++/Bohubrihi/output.txt
+programing_code/HackerRank/*.exe
