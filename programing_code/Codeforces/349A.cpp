@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/03/02 17:35:23
+// last modified: 2021/03/02 18:19:48
 
 
 
@@ -26,23 +26,30 @@ int main() {
     {
         cin>>a[i];
         int t = a[i];
-        if((y - t) >= 0 && a[i] == 100) {
-            y = y - 50;
-            t = t - 50;
-        }
-        
-        if (x - t >= -25 && a[i] != 25 ) {
-            x = x - 25;
-            t = t - 25;
-        }
         if(a[i] == 25) {
             x = x + 25;
         }
-        else if(a[i] == 50) {
-            y = y + 50;
+        else if( a[i] == 50) {
+            if(25 <= x) {
+                x = x - 25;
+                y = y + 50;
+            }
+            else {
+                ttk = false;
+            }
         }
         else {
-            ttk = false;
+            if(( y >= 50 && x >= 25)) {
+                y = y - 50;
+                x = x - 25;
+                z = z + 100;
+            }
+            else if ( x >= 75) {
+                x = x - 75;
+            }
+            else {
+                ttk = false;
+            }
         }
     }
     if(ttk) {
