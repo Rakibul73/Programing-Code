@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/03/07 02:28:50
+// last modified: 2021/03/06 08:38:36
 
 
 
@@ -74,6 +74,37 @@ int count_Divisors(int n)
 int main() {
     // Below function is A fast IO program
     fast_cin();
+    int T;
+    cin>>T;
+    while (T)
+    {
+        int n, k;
+        cin>>n>>k;
+        if(k%2 == 0) {
+            int l = n - (k/2);
+            cout<<l<<"\n";
+            for (int i = k/2; i <= n; i++)
+            {
+                if(i == k) {
+                    continue;
+                }
+                cout<<i<<" ";
+            }
+        }
+        else {
+            int l = n - ((k/2) + 1);
+            cout<<l<<"\n";
+            for (int i = ((k/2) + 1); i <= n; i++)
+            {
+                if(i == k) {
+                    continue;
+                }
+                cout<<i<<" ";
+            }
+        }
+        cout<<"\n";
+        T--;
+    }
     
     
     return 0;

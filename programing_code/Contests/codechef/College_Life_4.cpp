@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/03/07 02:28:50
+// last modified: 2021/03/06 06:38:58
 
 
 
@@ -70,10 +70,72 @@ int count_Divisors(int n)
         } 
     } 
     return cnt; 
-} 
+}
+int solve() {
+    long long N, E, H, A , B, C;
+    cin>>N>>E>>H>>A>>B>>C;
+    int tk = 0, cpy;
+    bool parbo = true;
+    if(E == H) {
+        cpy = E;
+    }
+    else if (E < H) {
+        cpy = (H - E)/3;
+    }
+    else if(E > H) {
+        cpy = (E - H)/2;
+    }
+    if (N > cpy)
+    {
+        return -1;
+    }
+    else {
+        long long tk = 0;
+        if(A < B && A < C) {
+            if(E/2 == N) {
+                tk = N*A;
+                return tk;
+            }
+            tk = tk + (E/2)*A;
+            E = E % 2;
+            N = N - (E/2);
+            if(B < C) {
+                if(H/3 == N) {
+                    tk = tk + N*B;
+                    return tk;
+                }
+                tk = tk + (H/3)*B;
+                B = B % 3;
+                N = N - (H/3);
+                tk = tk + (N*C);
+                return tk;
+            }
+            else {
+                if(E/N >= 1 && H/N >= 1) {
+                    tk = tk + N*C;
+                    return tk;
+                }
+                N = N - E;
+                tk = tk + (E*C);
+                H = H - E;
+                tk = tk + (N*B);
+                return tk;
+            }
+        }
+    }
+    return -1;
+}
 int main() {
     // Below function is A fast IO program
     fast_cin();
+    int T;
+    cin>>T;
+    while (T)
+    {
+        int z = solve();
+        cout<<z<<"\n";
+        T--;
+    }
     
     
     return 0;

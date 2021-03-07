@@ -6,40 +6,50 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/02/19 22:17:25
+// last modified: 2021/03/07 08:50:28
 
 
 
 #include <bits/stdc++.h> 
 using namespace std;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-map<char, int> stringTOmapWithFreq(string str) {
-    map<char, int> abc;
-    for (long long i = 0; i < str.size(); i++)
-    {
-        abc[str[i]]++;
+void solve(int a , int b, int c, int n) {
+    int ans = 0;
+    vector<int> gg = {a, b , c};
+    sort(gg.begin(), gg.end());
+    if(n % gg[0] == 0) {
+        ans = n/gg[0];
+        cout<<ans<<"\n";
+        return;
     }
-    abc.erase(' '); // map thika space key remove krsi.
-    return abc;
-}
-vector<pair<char, int>> maptovector(const map<char,int> &map) {
-    return vector<pair<char,int>>(map.begin(), map.end());
-}
-vector<pair<int,int>>  cinvecpair(int n) {
-    int q, w;
-    vector<pair<int,int>> a;
-    for (int i = 0; i < n; i++)
-    {
-        cin>>q>>w;
-        a.push_back(make_pair(q,w));
+    else {
+        ans = ans + (n/gg[0]);
+        n = n% gg[0];
+        while (n < gg[1])
+        {
+            ans--;
+            n = n+ gg[0];
+        }
+        if(n % gg[1] == 0) {
+            ans = ans + (n/gg[1]);
+            cout<<ans<<"\n";
+            return;
+        }
+        else {
+            ans = ans + (n/gg[1]);
+            n = n % gg[0];
+            
+        }
         
+
     }
-    return a;
 }
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    
+    int n, a,b,c;
+    cin>>n>>a>>b>>c;
+    solve(a,b,c,n);
     
     return 0;
 }
