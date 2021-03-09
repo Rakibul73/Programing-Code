@@ -6,7 +6,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/03/07 02:28:50
+// last modified: 2021/03/09 14:09:58
 
 
 
@@ -58,10 +58,10 @@ int* GetBigInteger_by_string_input_to_int_array(string str)
     return arr; 
 }
 
-int count_Divisors(int n) 
-{ 
-    int cnt = 0; 
-    for (int i = 1; i <= sqrt(n); i++) { 
+long long count_Divisors(long long n) 
+{
+    long long cnt = 0; 
+    for (long long i = 1; i <= sqrt(n) ; i++) { 
         if (n % i == 0) { 
             if (n / i == i) 
                 cnt++;
@@ -74,7 +74,9 @@ int count_Divisors(int n)
 int main() {
     // Below function is A fast IO program
     fast_cin();
-    
-    
+    long long g = count_Divisors(5);
+    cout<<g<<endl;
+    long long h = count_Divisors(4);
+    cout<<h<<endl;
     return 0;
 }
