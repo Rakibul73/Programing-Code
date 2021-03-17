@@ -6,76 +6,73 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2021/03/08 16:03:43
+// last modified: 2021/03/17 18:44:37
 
 
 
 #include <bits/stdc++.h> 
 using namespace std;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-map<char, int> string_TO_map_With_Freq(string str) {
-    map<char, int> abc;
-    for (long long i = 0; i < str.size(); i++)
-    {
-        abc[str[i]]++;
-    }
-    abc.erase(' '); // map thika space key remove krsi.
-    return abc;
-}
-vector<pair<char, int>> map_to_vector(const map<char,int> &map) {
-    return vector<pair<char,int>>(map.begin(), map.end());
-}
-vector<pair<int,int>>  cin_vec_pair(int n) {
-    int q, w;
-    vector<pair<int,int>> a;
-    for (int i = 0; i < n; i++)
-    {
-        cin>>q>>w;
-        a.push_back(make_pair(q,w));
-        
-    }
-    return a;
-}
-long long gcd_fast(long long a, long long b)
+long long factorial(long long n) 
 {
-    if (b == 0)
-        return a;
-    return gcd_fast(b, a % b);
+    return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); 
 }
-long long lcm_calculate_for_two_num (long long a, long long b) {
-    long long c = gcd_fast(a, b);
-    return (a*b)/c;
-}
-
-int* GetBigInteger_by_string_input_to_int_array(string str) 
+long long fact(long long n);
+long long nCr(long long n, long long r) 
 { 
-    int x = str.size(), a = 0; 
-    int* arr = new int[str.size()]; 
-    while (a != x) { 
-        arr[a] = str[a] - '0'; 
-        a++; 
-    }
-    return arr; 
+    return fact(n) / (fact(r) * fact(n - r)); 
 }
-
-int count_Divisors(int n) 
+long long fact(long long n) 
 { 
-    int cnt = 0; 
-    for (int i = 1; i <= sqrt(n); i++) { 
-        if (n % i == 0) { 
-            if (n / i == i) 
-                cnt++;
-            else
-                cnt = cnt + 2; 
-        } 
-    } 
-    return cnt; 
+    long long res = 1; 
+    for (long long i = 2; i <= n; i++) 
+        res = res * i; 
+    return res; 
 } 
+int nprfact(int n) 
+{ 
+    if (n <= 1) 
+        return 1; 
+    return n*nprfact(n-1); 
+} 
+
+int nPr(int n, int r) 
+{ 
+    return nprfact(n)/nprfact(n-r); 
+}
 int main() {
     // Below function is A fast IO program
     fast_cin();
+    long long N, M, K;
+    cin>>N>>M>>K;
+    long long e = (K/2);
+    long long d = K%2;
+    long long c = (M/2);
+    long long b = M%2;
+    long long a = N - (e+d+b+c);
+
+    long long r = 5;
+    if(e == 0) {
+        r--;
+    }
+    if(a == 0) {
+        r--;
+    }
+    if(b == 0) {
+        r--;
+    }
+    if(c == 0) {
+        r--;
+    }
+    if(d == 0) {
+        r--;
+    }
     
+    long long n = a+b+c+d+e;
+    long long ans =  nPr(n , r);
+    cout<<ans<<"\n";
+    
+
     
     return 0;
 }
-
