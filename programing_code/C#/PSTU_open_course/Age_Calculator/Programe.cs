@@ -34,7 +34,7 @@ namespace Age_Calculator
             // just year re mas a convert koira ,,baki mas jog koira,, today thika biyog dilei day pamu..,
             int days = (today - dob.AddMonths((year * 12) + month)).Days;
             
-            // eda just khali show krsi.. ar mas , year day 1 er besi hoile just "s" pase lagaisi,, eda facat na,
+            // eda just khali show krsi.. ar mas , year day 1 er besi hoile just "s" pase lagaisi,, eda fact na,
             return string.Format("{0} year{1}, {2} month{3} and {4} day{5}",
                                 year, (year == 1) ? "" : "s",
                                 month, (month == 1) ? "" : "s",
