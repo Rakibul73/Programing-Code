@@ -1,0 +1,13 @@
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.exe
+e:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.deps.json
+e:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.runtimeconfig.json
+e:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.runtimeconfig.dev.json
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.dll
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\bin\Debug\netcoreapp3.1\Age_Calculator.pdb
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.csprojAssemblyReference.cache
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.AssemblyInfoInputs.cache
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.AssemblyInfo.cs
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.csproj.CoreCompileInputs.cache
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.dll
+E:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.pdb
+e:\Programing-Code\programing_code\C#\PSTU_open_course\Age_Calculator\obj\Debug\netcoreapp3.1\Age_Calculator.genruntimeconfig.cache
