@@ -1,0 +1,16 @@
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.exe
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.deps.json
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.runtimeconfig.json
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.runtimeconfig.dev.json
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.dll
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\ref\Test2.dll
+E:\Programing-Code\programing_code\C#\Test2\bin\Debug\net5.0\Test2.pdb
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.csprojAssemblyReference.cache
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.AssemblyInfoInputs.cache
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.AssemblyInfo.cs
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.csproj.CoreCompileInputs.cache
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.dll
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\ref\Test2.dll
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.pdb
+E:\Programing-Code\programing_code\C#\Test2\obj\Debug\net5.0\Test2.genruntimeconfig.cache
