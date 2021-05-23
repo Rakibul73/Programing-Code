@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj": {}
+    "e:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj": {}
   },
   "projects": {
-    "E:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj": {
+    "e:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj",
+        "projectUniqueName": "e:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "E:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj",
+        "projectPath": "e:\\Programing-Code\\programing_code\\C#\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Spry-Shanto\\.nuget\\packages\\",
-        "outputPath": "E:\\Programing-Code\\programing_code\\C#\\Test\\obj\\",
+        "outputPath": "e:\\Programing-Code\\programing_code\\C#\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Spry-Shanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
