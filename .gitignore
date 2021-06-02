@@ -1,4 +1,4 @@
-
+#folder specified
 programing_code/Codeforces/.cph/
 programing_code/Codeforces/.vscode/
 programing_code/Contests/codechef/.vscode/
@@ -11,8 +11,9 @@ programing_code/C++/Bohubrihi/.cph/
 programing_code/Contests/CodeMarshal/.vscode/
 programing_code/Contests/CodeMarshal/.cph/
 programing_code/C#/Test/.vscode/
+programing_code/C#/Test4/CSharpIntermediate/
 
-
+#file specified
 gc++ 1.exe.dat
 programing_code/Codeforces/*.exe
 programing_code/Contests/codechef/*.exe
@@ -26,6 +27,6 @@ Certificate/Google/certs.pdf
 
 
 
-#all .vscode folder 
+#all .vscode folder/subfolder 
 **/.vscode
 **/.vs
