@@ -1,42 +1,87 @@
-#include <bits/stdc++.h>
+/***
+    Bismillahir Rahmanir Rahim
+    Read in the name of Allah, who created you.
+    Author : Md. Rakibul Islam,
+    Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
+***/
+
+// last modified: 2021/06/02 19:12:30
+
+
+
+
+#pragma GCC optimize("Ofast")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
+#pragma GCC optimize("unroll-loops")
+#include <bits/stdc++.h> 
+#include <complex>
+#include <queue>
+#include <set>
+#include <unordered_set>
+#include <list>
+#include <chrono>
+#include <random>
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <iomanip>
+#include <fstream>
+ 
 using namespace std;
-
-#define ALL(c) (c).begin(), (c).end()
-#define mod 1000000007
-#define ll long long
-#define ull unsigned long long
+ 
+typedef long long ll;
+typedef long double ld;
+typedef pair<int,int> p32;
+typedef pair<ll,ll> p64;
+typedef pair<double,double> pdd;
+typedef vector<ll> v64;
+typedef vector<int> v32;
+typedef vector<vector<int> > vv32;
+typedef vector<vector<ll> > vv64;
+typedef vector<vector<p64> > vvp64;
+typedef vector<p64> vp64;
+typedef vector<p32> vp32;
+ll MOD = 998244353;
+double eps = 1e-12;
+#define forn(i,e) for(ll i = 0; i < e; i++)
+#define forsn(i,s,e) for(ll i = s; i < e; i++)
+#define rforn(i,s) for(ll i = s; i >= 0; i--)
+#define rforsn(i,s,e) for(ll i = s; i >= e; i--)
+#define ln "\n"
+#define dbg(x) cout<<#x<<" = "<<x<<ln
+#define mp make_pair
 #define pb push_back
-#define N 100005
-const int INF = 1e9;
+#define fi first
+#define se second
+#define INF 2e18
+#define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define all(x) (x).begin(), (x).end()
+#define sz(x) ((ll)(x).size())
+ 
+template<class T> ostream& operator<<(ostream& os, const vector<T>& v);
+template<class T> ostream& operator<<(ostream& os, const deque<T>& v);
+template<class T, size_t s> ostream& operator<<(ostream& os, const array<T, s>& v);
+template<class T> ostream& operator<<(ostream& os, const set<T>& v);
+template<class A, class B> ostream& operator<<(ostream& os, const map<A, B>& v);
+template<class T> ostream& operator<<(ostream& os, const unordered_set<T>& v);
+template<class A, class B> ostream& operator<<(ostream& os, const unordered_map<A, B>& v);
+template<class A, class B> ostream& operator<<(ostream& os, const pair<A, B>& el);
 
-int dx[] = {0,0,-1,1};
-int dy[] = {1,-1,0,0};
 
-int main()
-{
-    int tst; cin >> tst;
-    while(tst--){
-        int n; cin >> n;
-        int a[n];
-        cin >> a[0] >> a[1] >> a[2];
-        for(int i = 3; i < n; i++)cin >> a[i];
-        if(a[0] != a[1]){
-            if(a[1] == a[2])cout << 1;
-            else cout << 2;
-            cout << endl;
-            continue;
-        }
-        if(a[1] != a[2]){
-            if(a[0] == a[1])cout << 3;
-            else cout << 2;
-            cout << endl;
-            continue;
-        }
-        int ans; bool ok = true;
-        for(int i = 3; i < n; i++){
-            if(a[i] != a[i-1] and ok)ans = i+1, ok = false;
-        }
-        cout << ans << endl;
-    }
+
+void solve() {
+    
+}
+int main() {
+    fast_cin();
+    //ll t;
+    int a;
+    
+    solve();
     return 0;
 }
