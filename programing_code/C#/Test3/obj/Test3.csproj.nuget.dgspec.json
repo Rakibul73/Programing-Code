@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {}
+    "E:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {}
   },
   "projects": {
-    "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {
+    "E:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
+        "projectUniqueName": "E:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
         "projectName": "Test3",
-        "projectPath": "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
+        "projectPath": "E:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
         "packagesPath": "C:\\Users\\Spry-Shanto\\.nuget\\packages\\",
-        "outputPath": "e:\\Programing-Code\\programing_code\\C#\\Test3\\obj\\",
+        "outputPath": "E:\\Programing-Code\\programing_code\\C#\\Test3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Spry-Shanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
