@@ -30,3 +30,4 @@ Certificate/Google/certs.pdf
 #all .vscode folder/subfolder 
 **/.vscode
 **/.vs
+**/node_modules
