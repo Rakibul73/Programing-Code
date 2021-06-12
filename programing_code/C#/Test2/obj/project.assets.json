@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programing-Code\\programing_code\\C#\\Test2\\Test2.csproj",
+      "projectUniqueName": "e:\\Programing-Code\\programing_code\\C#\\Test2\\Test2.csproj",
       "projectName": "Test2",
-      "projectPath": "E:\\Programing-Code\\programing_code\\C#\\Test2\\Test2.csproj",
+      "projectPath": "e:\\Programing-Code\\programing_code\\C#\\Test2\\Test2.csproj",
       "packagesPath": "C:\\Users\\Spry-Shanto\\.nuget\\packages\\",
-      "outputPath": "E:\\Programing-Code\\programing_code\\C#\\Test2\\obj\\",
+      "outputPath": "e:\\Programing-Code\\programing_code\\C#\\Test2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Spry-Shanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

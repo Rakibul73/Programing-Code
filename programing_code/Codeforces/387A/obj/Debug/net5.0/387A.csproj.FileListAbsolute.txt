@@ -1,0 +1,16 @@
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.exe
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.deps.json
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.runtimeconfig.json
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.runtimeconfig.dev.json
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.dll
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\ref\387A.dll
+E:\Programing-Code\programing_code\Codeforces\387A\bin\Debug\net5.0\387A.pdb
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.csproj.AssemblyReference.cache
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.AssemblyInfoInputs.cache
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.AssemblyInfo.cs
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.csproj.CoreCompileInputs.cache
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.dll
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\ref\387A.dll
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.pdb
+E:\Programing-Code\programing_code\Codeforces\387A\obj\Debug\net5.0\387A.genruntimeconfig.cache

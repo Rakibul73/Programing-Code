@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {}
+    "E:\\Programing-Code\\programing_code\\Codeforces\\387A\\387A.csproj": {}
   },
   "projects": {
-    "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj": {
+    "E:\\Programing-Code\\programing_code\\Codeforces\\387A\\387A.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
-        "projectName": "Test3",
-        "projectPath": "e:\\Programing-Code\\programing_code\\C#\\Test3\\Test3.csproj",
+        "projectUniqueName": "E:\\Programing-Code\\programing_code\\Codeforces\\387A\\387A.csproj",
+        "projectName": "387A",
+        "projectPath": "E:\\Programing-Code\\programing_code\\Codeforces\\387A\\387A.csproj",
         "packagesPath": "C:\\Users\\Spry-Shanto\\.nuget\\packages\\",
-        "outputPath": "e:\\Programing-Code\\programing_code\\C#\\Test3\\obj\\",
+        "outputPath": "E:\\Programing-Code\\programing_code\\Codeforces\\387A\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Spry-Shanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
