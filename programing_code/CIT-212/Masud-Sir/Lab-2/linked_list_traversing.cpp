@@ -10,28 +10,28 @@ struct node{
 int main()
 {
     struct node *head = (struct node *)malloc(sizeof(struct node));
-    head -> data = 8;
+    head -> data = 1;
     head->link = NULL;
 
     struct node *current = (struct node *)malloc(sizeof(struct node));
-    current->data = 36;
-    current->link = NULL;
-    head->link = current;
-
-    struct node *current = (struct node *)malloc(sizeof(struct node));
-    current->data = 36;
-    current->link = NULL;
-    head->link = current;
-
-    struct node *current = (struct node *)malloc(sizeof(struct node));
-    current->data = 36;
+    current->data = 2;
     current->link = NULL;
     head->link = current;
 
     current = (struct node *)malloc(sizeof(struct node));
-    current->data = 48;
+    current->data = 3;
     current->link = NULL;
     head->link->link = current;
+
+    current = (struct node *)malloc(sizeof(struct node));
+    current->data = 4;
+    current->link = NULL;
+    head->link->link->link = current;
+
+    current = (struct node *)malloc(sizeof(struct node));
+    current->data = 5;
+    current->link = NULL;
+    head->link->link->link->link = current;
 
     struct node *temp = head;
     while(temp != NULL){
