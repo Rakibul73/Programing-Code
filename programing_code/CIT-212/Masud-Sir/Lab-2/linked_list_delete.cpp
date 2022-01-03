@@ -19,7 +19,6 @@ void del_pos(struct node **head, int pos){
         current = NULL;
     }
     else{
-
         while(pos != 1){
             previous = current;
             current = current->link;

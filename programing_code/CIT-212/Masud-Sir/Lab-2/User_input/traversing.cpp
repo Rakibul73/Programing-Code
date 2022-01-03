@@ -8,25 +8,6 @@ struct node {
     struct node *next; 
 }*head;
 
-void createList(int n);
-void traverseList();
-
-
-int main()
-{
-    int n;
-
-    printf("Enter the total number of nodes: ");
-    scanf("%d", &n);
-
-    createList(n);
-
-    printf("\nData in the list \n");
-    traverseList();
-
-    return 0;
-}
-
 
 void createList(int n)
 {
@@ -95,4 +76,20 @@ void traverseList()
         printf("Data = %d\n", temp->data); 
         temp = temp->next;                 
     }
+}
+
+
+int main()
+{
+    int n;
+
+    printf("Enter the total number of nodes: ");
+    scanf("%d", &n);
+
+    createList(n);
+
+    printf("\nData in the list \n");
+    traverseList();
+
+    return 0;
 }

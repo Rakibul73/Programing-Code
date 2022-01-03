@@ -1,45 +1,56 @@
-#include <bits/stdc++.h>
-#include <iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
+int matrix[25][25];
+int main()
+{
+    int node;
+    cout << "Number of nodes: \n";
+    cin >> node;
 
-int matrix[20][20];
-int count = 0;
-
-void displayMatrix(int v) {
-    int i, j;
-    for(i = 0; i < v; i++) {
-        for(j = 0; j < v; j++) {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
-
-void add_edge(int u, int v) {
-    matrix[u][v] = 1;
-}
-
-int main(int argc, char* argv[]) {
-    int v;
-    cout << "input number of vertices: ";
-    cin >> v;
-    for (int i = 1; i <= v; i++)
+    for (int ii = 0; ii < node; ++ii)
     {
-        int j;
-        cout << "Edges of vertex " << i << " = ";
-        cin >> j;
-        for (int k = 1; k <= j; k++)
+        cout << "Number of nodes connected to " << ii << ":\n";
+        int edge;
+        cin >> edge;
+        for (int jj = 1; jj <= edge; ++jj)
         {
+            cout << jj << " number node connected to " << ii << ": ";
             int u;
-            cout << "link node of " << i << "_" << k << " = ";
             cin >> u;
-            add_edge(i-1, u-1);
-            // add_edge(i, u);  // jodi vertex 0 dia suru hoy taile eida use krte hoibo.. naile uprer da
+            matrix[ii][u] = 1;
+            
         }
-        
     }
-    displayMatrix(v);
 
-    return 0;
+    // character input thakle eda
+    // char ch = 'a';
+    // for (int ii = 1; ii <= node; ++ii)
+    // {
+        
+    //     cout << "Number of nodes connected to " << ch << ":\n";
+    //     int edge;
+    //     cin >> edge;
+    //     for (int jj = 1; jj <= edge; ++jj)
+    //     {
+    //         cout << jj << " number node connected to " << ch << ": ";
+    //         char u;
+    //         cin >> u;
+
+    //         int x = ch - 'a';
+    //         int y = u - 'a';
+    //         matrix[x+1][y+1] = 1;
+            
+    //     }
+    //     ch++;
+    // }
+
+
+    for (int ii = 0; ii < node; ++ii)
+    {
+        for (int jj = 0; jj < node; ++jj)
+        {
+            cout << matrix[ii][jj];
+        }
+        cout << "\n";
+    }
 }

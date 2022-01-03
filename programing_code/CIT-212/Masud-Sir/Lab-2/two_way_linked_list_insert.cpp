@@ -31,33 +31,36 @@ class LinkedList {
     }
 
     void push_at(int newElement, int position) {
-      Node* newNode = new Node();
-      newNode->data = newElement;
-      newNode->next = NULL;
-      newNode->prev = NULL;
-      if(position < 1) {
-        cout<<"\nposition should be >= 1.";
-      } else if (position == 1) {
-        newNode->next = head;
-        head->prev = newNode;
-        head = newNode;
-      } else {
-        Node* temp = head;
-        for(int i = 1; i < position-1; i++) {
-          if(temp != NULL) {
-            temp = temp->next;
-          }
+        Node* newNode = new Node();
+        newNode->data = newElement;
+        newNode->next = NULL;
+        newNode->prev = NULL;
+        if(position < 1) {
+            cout<<"\nposition should be >= 1.";
+        } 
+        else if (position == 1) {
+            newNode->next = head;
+            head->prev = newNode;
+            head = newNode;
+        } 
+        else {
+            Node* temp = head;
+            for(int i = 1; i < position-1; i++) {
+                if(temp != NULL) {
+                    temp = temp->next;
+                }
+            }
+            if(temp != NULL) {
+                newNode->next = temp->next;
+                newNode->prev = temp;
+                temp->next = newNode;
+                if(newNode->next != NULL)
+                    newNode->next->prev = newNode;
+            } 
+            else {
+                cout<<"\nThe previous node is null.";
+            }
         }
-        if(temp != NULL) {
-          newNode->next = temp->next;
-          newNode->prev = temp;
-          temp->next = newNode;
-          if(newNode->next != NULL)
-            newNode->next->prev = newNode;
-        } else {
-          cout<<"\nThe previous node is null.";
-        }
-      }
     }
 
     void PrintList() {

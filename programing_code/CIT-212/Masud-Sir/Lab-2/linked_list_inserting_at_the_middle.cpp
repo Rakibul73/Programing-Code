@@ -7,7 +7,7 @@ struct node{
     struct node *link;
 };
 
-add_at_pos(struct node* head, int data, int pos){
+void add_at_pos(struct node* head, int data, int pos){
     struct node *ptr = head;
     struct node *ptr2 = (struct node*)malloc(sizeof(struct node));
     ptr2->data = data;
