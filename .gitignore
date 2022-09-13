@@ -17,5 +17,5 @@ programing_code/HackerRank/Algorithm/*.exe
 
 
 #all .vscode folder/subfolder 
-
+**/.cph
 **/node_modules
