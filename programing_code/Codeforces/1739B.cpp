@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/09/29 22:08:57
+// last modified: 2022/09/30 12:31:22
 
 
 
@@ -87,7 +87,7 @@ void solve() {
     int temp = 1;
     for (int i = 1; i < n; i++)
     {
-        if(((arr2[i-1] + arr[i]) != (arr2[i-1] - arr[i])) && ((arr2[i-1] - arr[i]) > 0)) {
+        if(((arr2[i-1] + arr[i]) != (arr2[i-1] - arr[i])) && ((arr2[i-1] - arr[i]) >= 0)) {
             temp = -1;
             break;
         }
