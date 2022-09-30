@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/09/29 17:35:02
+// last modified: 2022/09/30 19:06:26
 
 
 
@@ -78,26 +78,16 @@ int count_Divisors(int n)
 void solve() {
     string abc;
     cin>>abc;
+    char temp = '9';
+    for (int i = abc.size()-1 ; i >= 0; i--) {
+        temp = min(temp, abc[i]);
+        if (abc[i] != '9' && abc[i] > temp) {
+			abc[i]++;
+        }
+	}
+
     sort(abc.begin(), abc.end());
-    for (int i = 0; i < abc.size(); i++)
-    {
-        if(abc[i] == '0' || abc[i] == '1') {
-            continue;
-        }
-        else if(abc[i-1] == '0') {
-            continue;
-        }
-        else if(abc[i-1] == abc[i]) {
-            continue;
-        }
-        else if(abc[i] == '9') {
-            continue;
-        }
-        else {
-            abc[i] = abc[i] + 1;
-        }
-    }
-    
+
     cout<<abc<<"\n";
 }
 
