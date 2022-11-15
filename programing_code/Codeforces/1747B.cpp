@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/11/04 22:08:32
+// last modified: 2022/11/15 20:58:40
 
 
 
@@ -76,34 +76,16 @@ int count_Divisors(int n)
 } 
 
 void solve() {
-    // BANBANBANBAN
-    // 1 - 12
-    // 2 - 16
-    // 3 - 16 49
-    // 4 - 16 49 712
-    int n;
-    cin>>n;
-    
-    if(n == 1) {
-        cout<<"1\n1 2\n";
-        return;
+    int n; 
+    cin >> n;
+    cout << n/2 + n % 2 << endl;
+    int l = 1, r = 3*n;
+    while(l < r){
+        cout << l << " " << r << endl;
+        l += 3;
+        r -= 3;
     }
-    if(n == 2) {
-        cout<<"1\n2 6\n";
-        return;
-    }
-    else {
-        int m = n-1;
-        cout<<m<<'\n';
-        cout<<"2 6\n";
-        for (int i = 2, h=2, j=6; i <= m; i++)
-        {
-            h = h+3;
-            j=j+3;
-            cout<<h<<" "<<j<<"\n";
-        }
-        return;
-    }
+    return;
 }
 
 int main() {
