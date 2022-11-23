@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/11/22 15:46:14
+// last modified: 2022/11/22 15:05:58
 
 
 
@@ -76,19 +76,35 @@ int count_Divisors(int n)
 } 
 
 void solve() {
-    
-    for (int i = 0; i < 2*100000; i++)
+    long long n;
+    cin>>n;
+    vector<long long>bal(n);
+    for (long long i = 0; i < n; i++)
     {
-        cout<<"0 ";
-        cout<<"1 ";
-        cout<<"0 ";
-        cout<<"1 ";
-        cout<<"1 ";
-        cout<<"0 ";
-        cout<<"0 ";
-        cout<<"0 ";
-        cout<<"1 ";
+        cin>>bal[i];
     }
+
+    // bal.erase( unique( bal.begin(), bal.end() ), bal.end() );
+
+    vector<long long>::iterator ip;
+    ip = unique(bal.begin(), bal.begin() + bal.size());
+    bal.resize(distance(bal.begin(), ip));
+
+    bool gg = true;
+    for (long long i = 1; i < bal.size()-1; i++)
+    {
+        if(bal[i-1] < bal[i]  && bal[i] > bal[i+1]) {
+            gg = false;
+            break;
+        }
+    }
+    if(gg) {
+        cout<<"YES\n";
+    }
+    else {
+        cout<<"NO\n";
+    }
+    
     
 }
 
@@ -96,8 +112,8 @@ int main() {
     // Below function is A fast IO program
     fast_cin();
     int t;
-    //cin >> t;
-    t = 1;
+    cin >> t;
+    //t = 1;
     for (int i = 1; i <= t; i++) {
         solve();
     }

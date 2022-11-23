@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/11/22 15:46:14
+// last modified: 2022/11/22 19:14:09
 
 
 
@@ -76,28 +76,55 @@ int count_Divisors(int n)
 } 
 
 void solve() {
-    
-    for (int i = 0; i < 2*100000; i++)
+    long long n;
+    cin>>n;
+    vector<long long> hayre_kopal(n), balermata(n), bra_size;
+    for (long long i = 0; i < n; i++)
     {
-        cout<<"0 ";
-        cout<<"1 ";
-        cout<<"0 ";
-        cout<<"1 ";
-        cout<<"1 ";
-        cout<<"0 ";
-        cout<<"0 ";
-        cout<<"0 ";
-        cout<<"1 ";
+        cin>>hayre_kopal[i];
     }
     
+
+    long long zerooo = 0, summmm = 0;
+    for (long long i = n - 1; i >= 0; i--)
+    {
+        if(hayre_kopal[i] == 1) {
+            summmm = summmm + (zerooo);
+        }
+        else if(hayre_kopal[i] == 0) {
+            zerooo++;
+        }
+    }
+    bra_size.push_back(summmm);
+
+    for (long long i = 0; i < n; i++)
+    {
+        balermata = hayre_kopal;
+        balermata[i] == 0? balermata[i] = 1: balermata[i] = 0;
+        long long zerooo = 0, summmm = 0;
+        for (long long i = n - 1; i >= 0; i--)
+        {
+            if(balermata[i] == 1) {
+                summmm = summmm + (zerooo);
+            }
+            else if(balermata[i] == 0) {
+                zerooo++;
+            }
+        }
+        bra_size.push_back(summmm);
+    }
+    
+    sort(bra_size.begin(), bra_size.end());
+    cout<<bra_size[bra_size.size()-1]<<"\n";
+
 }
 
 int main() {
     // Below function is A fast IO program
     fast_cin();
     int t;
-    //cin >> t;
-    t = 1;
+    cin >> t;
+    //t = 1;
     for (int i = 1; i <= t; i++) {
         solve();
     }
