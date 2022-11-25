@@ -5,7 +5,7 @@
     Faculty of CSE, Patuakhali Science & Technology University, Bangladesh.
 ***/
 
-// last modified: 2022/11/23 18:58:35
+// last modified: 2022/11/25 19:52:30
 
 
 
@@ -18,7 +18,7 @@ long long INFF = 1000000000000000005LL;
 
 map<char, int> string_TO_map_With_Freq(string str) {
     map<char, int> abc;
-    for (long long i = 0; i < str.size(); i++)
+    for (int i = 0; i < str.size(); i++)
     {
         abc[str[i]]++;
     }
@@ -76,6 +76,28 @@ int count_Divisors(int n)
 } 
 
 void solve() {
+    long long n;
+    cin>>n;
+    vector<long long> xxx;
+    for (long long i = 0; i < n; i++)
+    {
+        long long input;
+        cin>>input;
+        xxx.push_back(input);
+    }
+    long long redtube = -INFF, boobs = 0;
+    for (long long i = 0; i < n; i++)
+    {
+        boobs = boobs + xxx[i];
+        redtube = max(boobs, redtube);
+        if(boobs < 0) {
+            boobs = 0;
+            continue;
+        }
+        
+    }
+    cout<<redtube<<"\n";
+    return;
     
 }
 
@@ -83,8 +105,8 @@ int main() {
     // Below function is A fast IO program
     fast_cin();
     int t;
-    cin >> t;
-    //t = 1;
+    //cin >> t;
+    t = 1;
     for (int i = 1; i <= t; i++) {
         solve();
     }
