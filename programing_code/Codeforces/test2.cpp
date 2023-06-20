@@ -1,58 +1,50 @@
-#include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
+#include <iostream>
+#include <vector>
+#include <cmath>
+
 using namespace std;
-#define ll long long
-#define pb push_back
-#define ff first
-#define ss second
-#define pii pair<int, int>
-#define pll pair<long long int, long long int>
-#define ALL(s) (s).begin(), (s).end()
-#define rALL(s) (s).rbegin(), (s).rend()
-#define show(x) cout << #x << " : " << x << endl
-#define fast                          \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL)
-template <class T>
-using indexed_set = tree<T, null_type, less<T>, rb_tree_tag,
-                         tree_order_statistics_node_update>; // indexed_set<ll> st;st.order_of_key(x);
-const long long mod = 1e9 + 7;
 
-int dx[]={0, 0, +1, -1};
-int dy[]={+1, -1, 0, 0};
+// Function to find all possible sums
+vector<long long> subsetSum(vector<long long>& arr) {
+    // Calculate the maximum possible sum based on the absolute value of the input numbers
+    long long maxSum = 0;
+    for (auto num : arr) {
+        maxSum += abs(num);
+    }
 
-void solve(int tc)
-{
-  //cout << "Case " << tc << ": ";
-  ll n;
-  cin >> n;
-  string s;
-  cin >> s;
-  set<char>x, y;
-  ll left[n], right[n];
-  for(int i=0; i<n; i++){
-    x.insert(s[i]);
-    left[i]=x.size();
-  }
-  for(int i=n-1; i>=0; i--){
-    y.insert(s[i]);
-    right[i]=y.size();
-  }
+    // Initialize a vector of booleans to store the possible sums
+    vector<bool> dp(maxSum + 1, false);
+    dp[0] = true;
 
-  ll ans = 0;
-  for(int i=0; i<n-1; i++){
-    ll tem  = left[i]+right[i+1];
-    ans = max(ans, tem);
-  }
-  cout <<ans << endl;
+    // Iterate through the array and update the dp vector
+    for (int i = 0; i < arr.size(); i++) {
+        for (int j = maxSum - abs(arr[i]); j >= 0; j--) {
+            if (dp[j]) {
+                dp[j + abs(arr[i])] = true;
+            }
+        }
+    }
+
+    // Convert the dp vector to a vector of long long integers and return it
+    vector<long long> result;
+    for (long long i = 1; i < dp.size(); i++) {
+        if (dp[i]) {
+            result.push_back(i);
+        }
+    }
+    return result;
 }
 
-int main()
-{
-    int tc = 1;
-    cin >> tc;
-    for (int i = 1; i <= tc; i++)
-        solve(i);
+int main() {
+    vector<long long> arr = {3, -2, 4};
+
+    vector<long long> result = subsetSum(arr);
+
+    // Print the result
+    for (auto sum : result) {
+        cout << sum << " ";
+    }
+    cout << endl;
+
+    return 0;
 }
